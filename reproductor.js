@@ -13,7 +13,7 @@ function iniciar(){
 }
 function reiniciar(){
         var audio = document.getElementById("miAudio");
-        audio.preload;
+        audio.currentTime = 0
 }
 function adelantar(value){
         var audio = document.getElementById("miAudio");
@@ -26,8 +26,14 @@ function atrasar(value){
 function subir(value){
         var audio = document.getElementById("miAudio"); 
         audio.volume += value;
-    
+}    
+function stop(){
+    var audio = document.getElementById("miAudio");
+    audio.load();
 }
+    
+    
+
 function bajar(value){
         var audio = document.getElementById("miAudio");
         audio.volume -= value;
