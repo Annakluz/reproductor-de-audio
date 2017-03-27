@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="reproductor.js"></script>
+</head>
+<body>
+   <audio id="miAudio" src="Florence.mp3"></audio>
+ 
+	<div id="duracion">
+		<span></span>
+		<div></div>
+	</div>
+ 
+	<div id="botones">
+		<button id="iniciar" onclick="iniciar()">&#9658;</button>
+		<button id="reiniciar" onclick="reiniciar()">&#8635;</button>
+		<button id="stop"  onclick="stop()">&#9209;</button>
+		<button id="adelantar" onclick="adelantar(10)">adelantar</button>
+		<button id="atrasar" onclick="atrasar(10)">atrasar</button>
+		<button id="bajar" onclick="bajar(.2)">-</button>
+		<button id="subir" onclick="subir(.2)">+</button>
+	</div>
+    
+</body>
+</html>
