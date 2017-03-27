@@ -1,4 +1,4 @@
-
+ var audio = document.getElementById("miAudio");
 
 function iniciar(){
     var audio = document.getElementById("miAudio");
@@ -38,3 +38,10 @@ function bajar(value){
         var audio = document.getElementById("miAudio");
         audio.volume -= value;
 }
+audio.ontimeupdate = function() {
+  var audio = document.getElementById("miAudio");
+  var barraProgreso = document.getElementById("barra");
+
+ barraProgreso.value = audio.currentTime;
+
+};
